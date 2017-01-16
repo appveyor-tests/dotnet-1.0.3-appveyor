@@ -3,7 +3,7 @@ configuration:
 - Debug
 before_build:
 #- ps: .\dotnet-install.ps1 -Version 1.0.0-preview2-003156
-- dotnet restore
+- dotnet restore --verbosity verbose
 build_script:
 - dotnet build -c %CONFIGURATION%
 test_script:
